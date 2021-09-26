@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>09275703-c9dc-4825-8d5b-808fca0f9224</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Grpc\p2pservice.proto" GrpcServices="Both" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.39.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.39.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.MixedReality.WebRTC" Version="2.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PuzzleBox.Blockchain.Abstraction\PuzzleBox.Blockchain.Abstraction.csproj" />
+    <ProjectReference Include="..\PuzzleBox.Blockchain.ProofOfWork\PuzzleBox.Blockchain.ProofOfWork.csproj" />
+    <ProjectReference Include="..\PuzzleBox.Blockchain\PuzzleBox.Blockchain.csproj" />
+  </ItemGroup>
+
+</Project>

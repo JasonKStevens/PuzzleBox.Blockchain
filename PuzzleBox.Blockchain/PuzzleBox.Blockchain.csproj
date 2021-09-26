@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PuzzleBox.Blockchain.Abstraction\PuzzleBox.Blockchain.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mints\" />
+  </ItemGroup>
+
+</Project>

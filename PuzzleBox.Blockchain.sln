@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuzzleBox.Blockchain", "PuzzleBox.Blockchain\PuzzleBox.Blockchain.csproj", "{9F62576D-02C1-4F41-9DA6-1B95707746AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuzzleBox.Blockchain.Test", "PuzzleBox.Blockchain.Test\PuzzleBox.Blockchain.Test.csproj", "{C4A5AED4-2720-4D18-AC11-AF195C8A6AF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuzzleBox.Blockchain.Abstraction", "PuzzleBox.Blockchain.Abstraction\PuzzleBox.Blockchain.Abstraction.csproj", "{6CAC1331-91FB-45B2-A0B8-74A71BF59937}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuzzleBox.Blockchain.Api", "PuzzleBox.Blockchain.Api\PuzzleBox.Blockchain.Api.csproj", "{8DE68535-24D3-48F6-BFF5-408DCC3D5625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleBox.Blockchain.ProofOfWork", "PuzzleBox.Blockchain.ProofOfWork\PuzzleBox.Blockchain.ProofOfWork.csproj", "{D47E3319-0A35-41B1-8DC2-86C950224549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F62576D-02C1-4F41-9DA6-1B95707746AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F62576D-02C1-4F41-9DA6-1B95707746AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F62576D-02C1-4F41-9DA6-1B95707746AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F62576D-02C1-4F41-9DA6-1B95707746AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A5AED4-2720-4D18-AC11-AF195C8A6AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A5AED4-2720-4D18-AC11-AF195C8A6AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A5AED4-2720-4D18-AC11-AF195C8A6AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A5AED4-2720-4D18-AC11-AF195C8A6AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAC1331-91FB-45B2-A0B8-74A71BF59937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAC1331-91FB-45B2-A0B8-74A71BF59937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAC1331-91FB-45B2-A0B8-74A71BF59937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAC1331-91FB-45B2-A0B8-74A71BF59937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE68535-24D3-48F6-BFF5-408DCC3D5625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE68535-24D3-48F6-BFF5-408DCC3D5625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE68535-24D3-48F6-BFF5-408DCC3D5625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE68535-24D3-48F6-BFF5-408DCC3D5625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47E3319-0A35-41B1-8DC2-86C950224549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47E3319-0A35-41B1-8DC2-86C950224549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47E3319-0A35-41B1-8DC2-86C950224549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47E3319-0A35-41B1-8DC2-86C950224549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDA7B28B-184E-4A35-A2E6-46CFF86B6412}
+	EndGlobalSection
+EndGlobal

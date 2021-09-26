@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PuzzleBox.Blockchain.Api": {
+      "commandName": "Project",
+      "commandLineArgs": "rest=5001 host=5556 peers=5555"
+    }
+  }
+}

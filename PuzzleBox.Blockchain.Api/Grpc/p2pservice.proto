@@ -1,0 +1,37 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "PuzzleBox.Blockchain.Api.P2PComms";
+
+package p2pcomms;
+
+service P2PComms
+{
+  rpc GetBlockchain (BlockchainRequest) returns (BlockchainResponse);
+  rpc Mine (MineRequest) returns (BlockchainResponse);
+}
+
+message BlockchainRequest
+{
+}
+
+message MineRequest
+{
+  string fromAddress = 1;
+  string toAddress = 2;
+  string amount = 3;
+}
+
+message Block
+{
+  google.protobuf.Timestamp timestamp = 1;
+  google.protobuf.StringValue lastHash = 2;
+  string hash = 3;
+  google.protobuf.StringValue data = 4;
+}
+
+message BlockchainResponse
+{
+  repeated Block blocks = 1;
+}
