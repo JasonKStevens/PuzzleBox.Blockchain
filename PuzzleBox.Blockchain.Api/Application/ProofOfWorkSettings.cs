@@ -4,6 +4,6 @@ namespace PuzzleBox.Blockchain.Api.Application
 {
     public class ProofOfWorkSettings : IProofOfWorkSettings
     {
-        public int Difficulty { get; } = 2;
+        public int Difficulty { get; } = 5;
     }
 }

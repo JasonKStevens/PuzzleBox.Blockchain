@@ -8,8 +8,4 @@
     <ProjectReference Include="..\PuzzleBox.Blockchain.Abstraction\PuzzleBox.Blockchain.Abstraction.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Mints\" />
-  </ItemGroup>
-
 </Project>

@@ -9,6 +9,7 @@ namespace PuzzleBox.Blockchain.Api.Application
 {
     public class ContainerModule : Module
     {
+        public string ProofAlgorithm { get; set; }
         public string CryptoProvider { get; set; }
         public string DateTimeProvider { get; set; }
 
@@ -31,17 +32,22 @@ namespace PuzzleBox.Blockchain.Api.Application
             builder
                 .RegisterType<Blockchain<Transaction>>()
                 .As<IBlockchain<Transaction>>();
+            
+            switch (ProofAlgorithm?.ToUpper())
+            {
+                default:
+                case "POW":
+                    builder
+                        .RegisterType<ProofOfWorkMint<Transaction>>()
+                        .As<IMint<Transaction>>()
+                        .SingleInstance();
 
-            // Proof of Work
-            builder
-                .RegisterType<ProofOfWorkMint<Transaction>>()
-                .As<IMint<Transaction>>()
-                .SingleInstance();
-
-            builder
-                .RegisterType<ProofOfWorkSettings>()
-                .As<IProofOfWorkSettings>()
-                .SingleInstance();
+                    builder
+                        .RegisterType<ProofOfWorkSettings>()
+                        .As<IProofOfWorkSettings>()
+                        .SingleInstance();
+                    break;
+            }
 
             switch (CryptoProvider?.ToUpper())
             {
